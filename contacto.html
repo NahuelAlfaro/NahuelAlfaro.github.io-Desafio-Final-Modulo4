@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./components/header.css" />
     <link rel="stylesheet" href="./components/contact.css" />
     <script defer src="./components/header.js"></script>
+    <script defer src="./components/contact.js"></script>
   </head>
   <body>
     <section class="contact-section">
@@ -40,21 +41,27 @@
 
       <div class="write">
         <h2 class="contact-title">Contacto</h2>
-        <div class="contact-inputs">
+        <form action="" id="contact-form" class="contact-form">
           <div class="input">
-            <span class="label-contact">Nombre</span>
-            <input class="input-contact" type="text" />
+            <label class="label" for="name">
+              <span class="label-contact">Nombre</span>
+              <input id="name" class="input-contact" name="nombre" type="text" />
+            </label>
           </div>
           <div class="input">
-            <span class="label-contact">Email</span>
-            <input class="input-contact" name="email" type="email" />
+            <label for="email" class="label">
+              <span class="label-contact">Email</span>
+              <input id="email" class="input-contact" name="email" type="email" />
+            </label>
           </div>
           <div class="input">
-            <span class="label-contact">Mensaje</span>
-            <textarea class="textarea" name=""></textarea>
+            <label for="text" class="label">
+              <span class="label-contact">Mensaje</span>
+              <textarea id="text" class="textarea" name="mensaje"></textarea>
+            </label>
           </div>
-          <button class="contact-button">Enviar</button>
-        </div>
+          <button id="send" class="contact-button">Enviar</button>
+        </form>
       </div>
     </section>
     <section class="logo-section">

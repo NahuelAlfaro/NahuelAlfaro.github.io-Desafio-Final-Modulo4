@@ -42,21 +42,33 @@ body{
     flex-direction: column;
     justify-content: flex-start;
 }
+.label{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vh;
+}
 .input-contact{
-    width: 300px;
-    height: 35px;
+    width: 40vh;
+    height: 4.5vh;
     background-color: transparent;
     border-color: #7c2201;
-    border-width: 3px;
+    border-width: 0.6vh;
     font-family: "Steampunk";
     font-size: 4vh;
 }
 .textarea{
-    width: 300px;
-    height: 100px;
+    width: 40vh;
+    height: 15vh;
     background-color: transparent;
     border-color: #7c2201;
-    border-width: 3px;
+    border-width: 0.6vh;
     font-family: "Steampunk";
     font-size: 3vh;
 }

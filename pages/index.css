@@ -225,7 +225,7 @@ body{
     font-size: 8vh;
     text-shadow: 2px 2px 0 #c98d36;
 }
-.contact-inputs{
+.contact-form{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -243,21 +243,33 @@ body{
     flex-direction: column;
     justify-content: flex-start;
 }
+.label{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+.write{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
 .input-contact{
-    width: 300px;
-    height: 35px;
+    width: 40vh;
+    height: 4.5vh;
     background-color: transparent;
-    border-color: #7c2201;
-    border-width: 3px;
+    border-color: hsl(16, 98%, 25%);
+    border-width: 0.6vh;
     font-family: "Steampunk";
     font-size: 4vh;
 }
 .textarea{
-    width: 300px;
-    height: 100px;
+    width: 40vh;
+    height: 15vh;
     background-color: transparent;
     border-color: #7c2201;
-    border-width: 3px;
+    border-width: 0.6vh;
     font-family: "Steampunk";
     font-size: 3vh;
 }
