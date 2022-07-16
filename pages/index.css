@@ -1,0 +1,366 @@
+*{
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: "Steampunk";
+    src: url("./Steamwreck-07pd.ttf")
+}
+
+body{
+    margin: 0;
+    font-family: "Steampunk";
+}
+
+
+ /* Welcome-section */
+
+
+.welcome-section{
+    margin: 0;
+    height: 110vh;
+    background-image: url("../imgs/descarga.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.welcome-h1{
+    margin: 0;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-size: 14vh;
+    color: white;
+    margin: 0;
+    text-align: center;
+    text-shadow: 5px 5px 0 #6d2316;
+}
+
+
+/* aboutme-section */
+
+.aboutme-section{
+    transition: 1s;
+    margin: 0;
+    height: 100vh;
+    background-image: url("../imgs/aboutme.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7vh;
+}
+
+.lorem-title{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+.aboutme-img{
+    display: none;
+    height: 55vh;
+    width: 55vh;
+    margin-left: 15vh;
+}
+
+.about-me{
+    margin: 0;
+    color: white;
+    font-size: 10vh;
+    text-shadow: 5px 5px 0 #6d2316;
+}
+.lorem-about-me{
+    margin: 0;
+    text-align: center;
+    font-size: 5vh;
+    color: white;
+    text-shadow: 3px 3px 0 #6d2316;
+}
+@media(min-width:900px){
+    .aboutme-section{
+        gap: 0;
+    }
+    .lorem-title{
+        
+        align-items: flex-start;
+        
+    }
+    .lorem-about-me{
+        text-align: start;
+    }
+    .aboutme-img{
+        height: 45vh;
+        width: 45vh;
+        display: inherit;
+        margin-left: 0;
+        transition: 1s;
+    }
+}
+@media(min-width:1200px){
+
+    .lorem-title{
+        align-items: flex-start;
+    }
+    .lorem-about-me{
+        text-align: start;
+    }
+    .aboutme-img{
+        display: inherit;
+        height: 55vh;
+        width: 55vh;
+        margin-left: 13vh;
+        transition: 1s;
+    }
+}
+.services-section{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../imgs/—Pngtree—gear\ steampunk\ background\ ancient_1440811.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@media(min-width:900px){
+    .services-section{
+        height: 110vh;
+    }
+}
+.services-content{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    align-items: center;
+    justify-content: center;
+}
+.services-sub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+    text-align: center;
+}
+@media(min-width:900px){
+    .services-content{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+.services-img{
+    height: 20vh;
+    width: 20vh;
+}
+.services-title{
+    margin: 0;
+    margin-top: 3vh;
+    margin-bottom: 6vh;
+    transition: 1s;
+    font-size: 8vh;
+    color: white;
+    text-shadow: 5px 5px 0 #6d2316;
+}
+@media(min-width:900px){
+    .services-title{
+        margin-bottom: 15vh;
+        font-size: 11vh;
+    }
+}
+.services-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.services-subtitle{
+    transition: 1s;
+    color: white;
+    font-size: 6vh;
+    margin: 0;
+    text-shadow: 3px 3px 0 #6d2316;
+}
+@media(min-width:900px){
+    .services-subtitle{
+        font-size: 8vh;
+        transition: 1s;
+    }
+}
+.services-lorem{
+    transition: 1s;
+    color: white;
+    font-size: 4vh;
+    margin: 0px 10px;
+    text-align: center;
+    text-shadow: 3px 3px 0 #6d2316;
+}
+@media(min-width:900px){
+    .services-lorem{
+        font-size: 6vh;
+        transition: 1s;
+    }
+}
+
+.contact-section{
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    background-image: url("../imgs/horse.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.contact-title{
+    transition: 1s;
+    margin: 0;
+    font-size: 8vh;
+    text-shadow: 2px 2px 0 #c98d36;
+}
+.contact-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vh;
+    
+}
+
+.label-contact{
+    font-size: 5vh;
+    text-shadow: 2px 2px 0 #7c2201;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.input-contact{
+    width: 300px;
+    height: 35px;
+    background-color: transparent;
+    border-color: #7c2201;
+    border-width: 3px;
+    font-family: "Steampunk";
+    font-size: 4vh;
+}
+.textarea{
+    width: 300px;
+    height: 100px;
+    background-color: transparent;
+    border-color: #7c2201;
+    border-width: 3px;
+    font-family: "Steampunk";
+    font-size: 3vh;
+}
+.contact-button{
+    width: 10vh;
+    height: 5vh;
+    font-family: "Steampunk";
+    font-size: 6vh;
+    border: none;
+    background-color: transparent;
+    text-shadow: 2px 2px 0 #7c2201;
+}
+.contact-button:active{
+    transform: translateY(4px);
+}
+@media(min-width:900px){
+    .contact-section{
+       flex-direction: row;
+    }
+    .write{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .contact-title{
+        transition: 1s;
+        margin-right: 10vh;
+        margin-top: 3vh;
+        
+    }
+}
+
+.logo-section{
+    height: 50vh;
+    background-image: url("../imgs/logosection.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6vh;
+    transition: 1s;
+}
+@media(min-width:900px){
+    .logo-section{
+        flex-direction: row;
+        justify-content: space-around;
+        transition: 1s;
+    }
+}
+.logos{
+    display: flex;
+    flex-direction: column; 
+    
+}
+
+.github{
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+    
+}
+
+.github-logo{
+    height: 6vh;
+    width: 6vh;
+    color: #6d2316;
+}
+
+    
+
+.github-text{
+    color: black;
+    text-decoration: none;
+    font-size: 4vh;
+    text-shadow: 1px 1px 0 #6d2316;
+}
+@media(min-width:900px){
+    .github-text{
+        font-size: 6vh;
+    }
+}
+
+.logo-git{
+    border-radius: 50%;
+    width: 13vh;
+    height: 13vh;
+    transition: 1s;
+}
+@media(min-width:900px){
+    .logo-git{
+        width: 15vh;
+        height: 15vh;
+        transition: 1s;}
+}
+.name-git{
+    width: 13vh;
+    height: 8vh;
+}
+@media(min-width:900px){
+    .name-git{
+        width: 15vh;
+        height: 10vh;
+    }
+}

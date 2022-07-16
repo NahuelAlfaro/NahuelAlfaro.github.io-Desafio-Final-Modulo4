@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "Steampunk";
+}
+@font-face{
+    font-family: "Steampunk";
+    src: url("../pages/Steamwreck-07pd.ttf")
+}
+.portfolio-section{
+    height: auto;
+    background-image: url("../imgs/portoflio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portfolio{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.port-content{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    
+}
+@media(min-width:900px){
+    .port-content{
+        flex-direction: row;
+    }
+}
+
+.port-title{
+    font-size: 9vh;
+    color: white;
+    text-shadow: 4px 4px 0 #6d2316;
+    transition: 1s;
+    margin-top: 1px;
+}
+@media(min-width:900px){
+    .port-title{
+        transition: 1s;
+        font-size: 12vh;
+    }
+}
+.portfolio-sub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+    text-align: center;
+}
+
+.port-subtitle{
+    transition: 1s;
+    color: white;
+    font-size: 6vh;
+    margin: 0;
+    text-shadow: 2px 2px 0 #6d2316;
+}
+.port-lorem{
+    transition: 1s;
+    color: white;
+    font-size: 4vh;
+    margin: 0;
+    text-align: center;
+    text-shadow: 2px 2px 0 #6d2316;
+}
+.port-img{
+    height: 22vh;
+    width: 22vh;
+}
+.git-section{
+    height: 50vh;
+    background-image: url("../imgs/logosection.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6vh;
+    transition: 1s;
+}
+.logos{
+    display: flex;
+    flex-direction: column; 
+    
+}
+
+.github{
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+    
+}
+
+.github-logo{
+    height: 6vh;
+    width: 6vh;
+    color: #6d2316;
+}
+
+    
+
+.github-text{
+    color: black;
+    text-decoration: none;
+    font-size: 4vh;
+    text-shadow: 1px 1px 0 #6d2316;
+}
+@media(min-width:900px){
+    .github-text{
+        font-size: 6vh;
+    }
+}
+
+.logo-git{
+    border-radius: 50%;
+    width: 13vh;
+    height: 13vh;
+    transition: 1s;
+}
+@media(min-width:900px){
+    .logo-git{
+        width: 15vh;
+        height: 15vh;
+        transition: 1s;}
+}
+.name-git{
+    width: 13vh;
+    height: 8vh;
+}
+@media(min-width:900px){
+    .name-git{
+        width: 15vh;
+        height: 10vh;
+    }
+}

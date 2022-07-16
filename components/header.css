@@ -1,0 +1,120 @@
+
+*{
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: "Steampunk";
+    src: url("./Steamwreck-07pd.ttf")
+}.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    
+}
+.header-logo{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+.logo{
+    border-radius: 50%;
+    width: 11vh;
+    height: 11vh;
+    transition: 1s;
+    
+}
+@media(min-width:900px){
+    .logo{
+        width: 15vh;
+        height: 15vh;
+        transition: 1s;
+    }
+    
+}
+.name{
+    width: 11vh;
+    height: 6vh;
+    transition: 1s;
+}
+@media(min-width:900px){
+    .header-logo .name{
+        width: 15vh;
+        height: 7vh;
+        transition: 1s;
+    }
+}
+.menu{
+    width: 9vh;
+    height: 12vh;
+    margin-right: 10px;
+}
+@media(min-width:900px){
+    .menu{
+        display: none;
+    }
+}
+.menu-close{
+    width: 9vh;
+    height: 12vh;
+    margin-left: 1vh;
+}
+.window{
+    
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    display: none;
+    background-image: url("../imgs/frame.jpg");
+    background-repeat: round;
+    background-size: 59vh 100vh
+}
+@media(min-width:520px){
+    .window{
+        background-size: auto;
+    }
+}
+@media(min-height:1000px){
+    .window{
+        background-size: 59vh 100vh;
+        
+    }
+}
+.services-etc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    height: 80vh;
+}
+.services-text{
+    text-decoration: none;
+    color: white;
+    font-size: 10vh;
+    text-shadow: -5px 5px 0 #4d1f17;
+    
+}
+.desktop-buttons{
+    display: none;
+}
+
+@media(min-width:900px){
+    .desktop-buttons{
+        display: flex;
+        gap: 5vh;
+        margin-right: 3vh;
+    }
+}
+.desktop-button{
+    text-decoration: none;
+    color: white;
+    font-size: 6vh;
+    text-shadow: 3px 3px 0 #6d2316;
+}
+
+
+

@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "Steampunk";
+}
+@font-face{
+    font-family: "Steampunk";
+    src: url("../pages/Steamwreck-07pd.ttf")
+}
+.contact-section{
+    height: 120vh;
+    background-image: url("../imgs/horse.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.write{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-title{
+    transition: 1s;
+    margin: 0;
+    font-size: 8vh;
+    text-shadow: 2px 2px 0 #c98d36;
+}
+.contact-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vh;
+}
+.label-contact{
+    font-size: 5vh;
+    text-shadow: 2px 2px 0 #7c2201;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.input-contact{
+    width: 300px;
+    height: 35px;
+    background-color: transparent;
+    border-color: #7c2201;
+    border-width: 3px;
+    font-family: "Steampunk";
+    font-size: 4vh;
+}
+.textarea{
+    width: 300px;
+    height: 100px;
+    background-color: transparent;
+    border-color: #7c2201;
+    border-width: 3px;
+    font-family: "Steampunk";
+    font-size: 3vh;
+}
+.contact-button{
+    width: 10vh;
+    height: 5vh;
+    font-family: "Steampunk";
+    font-size: 6vh;
+    border: none;
+    background-color: transparent;
+    text-shadow: 2px 2px 0 #7c2201;
+}
+.contact-button:active{
+    transform: translateY(4px);
+}
+@media(min-width:900px){
+    .contact-section{
+       flex-direction: row;
+    }
+    .write{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .contact-title{
+        transition: 1s;
+        margin-right: 10vh;
+        margin-top: 3vh;
+        
+    }
+}
+.logo-section{
+    height: 50vh;
+    background-image: url("../imgs/logosection.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6vh;
+    transition: 1s;
+}
+@media(min-width:900px){
+    .logo-section{
+        flex-direction: row;
+        justify-content: space-around;
+        transition: 1s;
+    }
+}
+.logos{
+    display: flex;
+    flex-direction: column; 
+    
+}
+
+.github{
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+    
+}
+
+.github-logo{
+    height: 6vh;
+    width: 6vh;
+    color: #6d2316;
+}
+
+    
+
+.github-text{
+    color: black;
+    text-decoration: none;
+    font-size: 4vh;
+    text-shadow: 1px 1px 0 #6d2316;
+}
+@media(min-width:900px){
+    .github-text{
+        font-size: 6vh;
+    }
+}
+
+.logo-git{
+    border-radius: 50%;
+    width: 13vh;
+    height: 13vh;
+    transition: 1s;
+}
+@media(min-width:900px){
+    .logo-git{
+        width: 15vh;
+        height: 15vh;
+        transition: 1s;}
+}
+.name-git{
+    width: 13vh;
+    height: 8vh;
+}
+@media(min-width:900px){
+    .name-git{
+        width: 15vh;
+        height: 10vh;
+    }
+}
